@@ -6,6 +6,7 @@ class Node:
 
 path1 = []
 path2 = []
+root = Node
 
 def LCA(node1, node2):
     global path1
@@ -51,21 +52,21 @@ def getPath(root, endNode, path):
     return False
 
 
-root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)
-root.left.right = Node(5)
-root.right.left = Node(6)
-root.right.right = Node(7)
-root.left.right.left = Node(8)
-root.left.right.right = Node(9)
-root.right.right.left = Node(10)
-root.right.right.right = Node(11)
-root.left.right.right.left = Node(12)
-root.left.right.right.right = Node(13)
+# root = Node(1)
+# root.left = Node(2)
+# root.right = Node(3)
+# root.left.left = Node(4)
+# root.left.right = Node(5)
+# root.right.left = Node(6)
+# root.right.right = Node(7)
+#root.left.right.left = Node(8)
+#root.left.right.right = Node(9)
+#root.right.right.left = Node(10)
+#root.right.right.right = Node(11)
+#root.left.right.right.left = Node(12)
+#root.left.right.right.right = Node(13)
 
-print ("LCA of nodes with values 6 and 10 is " + str(LCA(6, 10))) #should be 3
-print ("LCA of nod)s with values 8 and 9 is " + str(LCA(8, 9))) #should be 5
-print ("LCA of nodes with values 7 and 11 is " + str(LCA(7, 11))) #should be 7
-print ("LCA of nodes with values 12 and 3 is " + str(LCA(12, 3))) #should be 1
+#print ("LCA of nodes with values 6 and 10 is " + str(LCA(6, 10))) #should be 3
+#print ("LCA of nodes with values 8 and 9 is " + str(LCA(8, 9))) #should be 5
+#print ("LCA of nodes with values 7 and 11 is " + str(LCA(7, 11))) #should be 7
+#print ("LCA of nodes with values 12 and 3 is " + str(LCA(12, 3))) #should be 1
